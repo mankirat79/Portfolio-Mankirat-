@@ -1,15 +1,76 @@
+/* Resetting default margin and padding for various elements */
 body, h1, h2, h3, p, ul, ol, figure, table {
   margin: 0;
   padding: 0;
 }
 
+/* ... (other styles remain unchanged) ... */
+
+/* Main content styling */
+main {
+  padding: 20px;
+}
+
+/* Biography Section styling */
+#About {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* List Styles */
+ol {
+  margin-left: 20px;
+}
+
+/* Table Styles */
+.education-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.education-table, .education-table th, .education-table td {
+  border: 1px solid #333;
+}
+
+.education-table th, .education-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* ... (other styles remain unchanged) ... */
+In this updated CSS, the list-style-type property is not explicitly set for the ordered list (ol). This will allow the browser to use the default decimal numbering. Additionally, I've removed the specific bullet styling for list items (ol li:before), as it might conflict with the desired decimal numbering.
+
+Make sure to test these changes in your HTML document to ensure the desired result.
+
+
+
+
+User
+kindly share the complete css
+ChatGPT
+Certainly! Here's the complete CSS with the suggested changes:
+
+css
+Copy code
+/* Resetting default margin and padding for various elements */
+body, h1, h2, h3, p, ul, ol, figure, table {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   background-color: powderblue;
   color: #333;
+  margin-left: 0px;
 }
 
+/* Header styling */
 header {
   background-color: #333;
   color: #fff;
@@ -17,6 +78,7 @@ header {
   text-align: center;
 }
 
+/* Navigation styling */
 nav ul {
   list-style: none;
 }
@@ -31,11 +93,12 @@ nav a {
   text-decoration: none;
 }
 
+/* Main content styling */
 main {
   padding: 20px;
 }
 
-/* Biography Section */
+/* Biography Section styling */
 #About {
   background-color: #f7f7f7;
   padding: 20px;
@@ -53,20 +116,11 @@ h2 {
   margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
 }
 
+/* List Styles */
 ol {
-  list-style-type: none;
-}
-
-ol li:before {
-  content: '\2022';
-  color: #333;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+  margin-left: 20px;
 }
 
 /* Table Styles */
@@ -74,6 +128,7 @@ ol li:before {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
+  margin-left: 5px;
 }
 
 .education-table, .education-table th, .education-table td {
@@ -85,7 +140,7 @@ ol li:before {
   text-align: left;
 }
 
-/* Contact Section */
+/* Contact Section styling */
 #contact {
   background-color: #eee;
   padding: 20px;
@@ -93,6 +148,7 @@ ol li:before {
   margin-top: 20px;
 }
 
+/* Footer styling */
 footer {
   background-color: #333;
   color: #fff;
@@ -107,4 +163,13 @@ footer {
 /* Additional Section Styling */
 .content-section {
   margin-bottom: 40px;
+}
+
+/* Custom Text Color Classes */
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: red;
 }

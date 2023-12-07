@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="styles/main.css" rel="stylesheet"/>
-  <title>Mankirat Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/main.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <script defer src="js/main.js"></script>
+    <title>Mankirat Resume</title>
 </head>
 <body style="background-color:powderblue;">
 
-  <header>
+<header>
     <h1>Mankirat</h1>
     <nav>
-      <ul>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Hobby">Hobby</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Hobby">Hobby</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-  </header>
-<!--I am enjoying coding-->
-  <main>
+</header>
+
+<main>
+    <section id="buttons">
+        <nav>
+            <ul>
+                <li><button id="btn-alert" class="common-btn">OK</button></li>
+                <li><button id="btn-hover" class="common-btn">Click here to login</button></li>
+                <li><button id="btn-counter" class="common-btn">Increment Counter</button></li>
+                <p id="txt-counter" class="common-btn">Number: 1</p>
+            </ul>
+        </nav>
+    </section>
 
     <section id="About">
-      <h2>About Me</h2>
-      <p>I'm Mankirat, a student at SAIT studying Interactive Design with a major in Graphic Design. I excel in creating user-friendly digital solutions by understanding user behavior and needs. I'm eager to contribute my skills to projects that prioritize exceptional Graphic Design.</p>
-      <figure>
-        <img src="Image2.jpg" width="350" height="200" alt="Image"/>
-        <figcaption>My Tech Setup</figcaption>
-      </figure>
-    
+        <h2>About Me</h2>
+        <p>I'm Mankirat, a student at SAIT studying Interactive Design with a major in Graphic Design. I excel in creating user-friendly digital solutions by understanding user behavior and needs. I'm eager to contribute my skills to projects that prioritize exceptional Graphic Design.</p>
         <figure>
-        <section id="Hobby"><h3>Hobbies</h3>
-      
-          <ol>
-            <li>Dancing</li>
-            <li>Cooking</li>
-            <li>Traveling</li>
-            <li>Painting</li>
-          </ol>
-          
-      <p>Whenever I get free time I enjoy doing lot more activities which keeps me excited all the time.</p>
-        <img src="Image1.jpg" width="300" height="200" alt="Hobby">
-        <figcaption>Adventurer</figcaption>
-      
-      <h3>Goals</h3>
-      <p>Apart from professional goals, my dream is to travel the world</p>
+            <img src="Image2.jpg" width="350" height="200" alt="Image"/>
+            <figcaption>My Tech Setup</figcaption>
+        </figure>
+        <section id="Hobby">
+            <h3>Hobbies</h3>
+            <ol>
+                <li>Dancing</li>
+                <li>Cooking</li>
+                <li>Traveling</li>
+                <li>Painting</li>
+            </ol>
+            <p>Whenever I get free time, I enjoy doing a lot more activities which keep me excited all the time.</p>
+            <img src="Image1.jpg" width="300" height="200" alt="Hobby">
+            <figcaption>Adventurer</figcaption>
+            <h3>Goals</h3>
+            <p>Apart from professional goals, my dream is to travel the world</p>
+        </section>
     </section>
-
-
-</main>
-
-
 
     <section id="education">
-      <h2>Educational Background</h2>
-      
+        <h2>Educational Background</h2>
+        <table border="1">
+            <tr>
+                <td width="200"><strong>Education</strong></td>
+                <td><strong>Percentage</strong></td>
+            </tr>
+            <tr>
+                <td>School</td>
+                <td>A grade</td>
+            </tr>
+            <tr>
+                <td>High School</td>
+                <td>A grade</td>
+            </tr>
+            <tr>
+                <td>Diploma</td>
+                <td>Ongoing</td>
+            </tr>
+        </table>
     </section>
 
-    <table border="1">
-      <tr>
-        <td width="200"><strong>Education</strong></td>
-        <td><strong>Percentage</strong></td>
-      </tr>
-      <tr>
-        <td>School</td>
-        <td>A grade</td>
-        <tr>
-          <td>High School</td>
-          <td>A grade</td>
-        </tr>
-        <tr>
-          <td>Diploma</td>
-          <td>Ongoing</td>
-      </tr>
-    </table>
-    
+    <section id="ordered list numbers">
+        <ol>
+              <ol id="numbers">
+        </ol>
 
-  </main>
-
-  
-
-  <section id="contact">
-    <h2>Contact Information</h2>
-    <p>follow me on <a href="https://github.com/mankirat79/Portfolio-Mankirat-" target="_blank">GitHub</a>.</p>
     </section>
 
-  <footer>
-    <p>&copy; 2023 Mankirat. All rights reserved.</p>
-  </footer>
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Follow me on <a href="https://github.com/mankirat79/Portfolio-Mankirat-" target="_blank">GitHub</a>.</p>
+    </section>
+</main>
+
+<footer>
+    &copy; Mankirat <span id="current-year"></span> | All Rights Reserved
+</footer>
 
 </body>
 </html>
