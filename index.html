@@ -1,100 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/main.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
-    <script defer src="js/main.js"></script>
-    <title>Mankirat Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet" />
+  <title>Mankirat Portfolio</title> 
 </head>
-<body style="background-color:powderblue;">
-
-<header>
-    <h1>Mankirat</h1>
+<body>
+  <header>
+    <h1 id="headerTitle">Mankirat</h1>
     <nav>
-        <ul>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Hobby">Hobby</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#About" id="navAbout">About</a></li>
+        <li><a href="#Hobby" id="navHobby">Hobby</a></li>
+        <li><a href="#education" id="navEducation">Education</a></li>
+        <li><a href="#contact" id="navContact">Contact</a></li>
+      </ul>
     </nav>
-</header>
-
-<main>
-    <section id="buttons">
-        <nav>
-            <ul>
-                <li><button id="btn-alert" class="common-btn">OK</button></li>
-                <li><button id="btn-hover" class="common-btn">Click here to login</button></li>
-                <li><button id="btn-counter" class="common-btn">Increment Counter</button></li>
-                <p id="txt-counter" class="common-btn">Number: 1</p>
-            </ul>
-        </nav>
-    </section>
-
-    <section id="About">
+  </header>
+  <center>
+  <button id="btn-alert">Click me for an alert</button>
+  <button id="btn-hover">Default Button Label</button>
+  <button id="btn-counter">Increment</button>
+  <p id="txt-counter">Number: 1</p>
+</center>
+      <section id="About">
         <h2>About Me</h2>
-        <p>I'm Mankirat, a student at SAIT studying Interactive Design with a major in Graphic Design. I excel in creating user-friendly digital solutions by understanding user behavior and needs. I'm eager to contribute my skills to projects that prioritize exceptional Graphic Design.</p>
+        <p id="aboutText">I'm Mankirat and I am Interactive Design Student.</p>
         <figure>
-            <img src="Image2.jpg" width="350" height="200" alt="Image"/>
-            <figcaption>My Tech Setup</figcaption>
+         <center><img src="Image1.jpg" width="350" height="200" alt="me working with laptop" /></center>
+          <figcaption><strong>Adventurer</strong></figcaption>
         </figure>
-        <section id="Hobby">
-            <h3>Hobbies</h3>
-            <ol>
-                <li>Dancing</li>
-                <li>Cooking</li>
-                <li>Traveling</li>
-                <li>Painting</li>
-            </ol>
-            <p>Whenever I get free time, I enjoy doing a lot more activities which keep me excited all the time.</p>
-            <img src="Image1.jpg" width="300" height="200" alt="Hobby">
-            <figcaption>Adventurer</figcaption>
-            <h3>Goals</h3>
-            <p>Apart from professional goals, my dream is to travel the world</p>
-        </section>
-    </section>
-
+      </section>
+     <section id="Hobby">
+        <h2>Hobbies</h2>
+        <p id="hobbyText">Apart from study, I've do lots of activities like, Video Games, Sports, Movies.
+            <figure>
+          <center><img src="Image2.jpg" width="300" height="200" alt="Hobby"></center>
+          <figcaption><strong>Workspace</strong></figcaption>
+        </figure>
+      </section>
     <section id="education">
-        <h2>Educational Background</h2>
+          <h2>Educational Background</h2>
         <table border="1">
-            <tr>
-                <td width="200"><strong>Education</strong></td>
-                <td><strong>Percentage</strong></td>
-            </tr>
-            <tr>
-                <td>School</td>
-                <td>A grade</td>
-            </tr>
-            <tr>
-                <td>High School</td>
-                <td>A grade</td>
-            </tr>
-            <tr>
-                <td>Diploma</td>
-                <td>Ongoing</td>
-            </tr>
+          <tr>
+            <th>Education</th>
+            <th>Percentage</th>
+          </tr>
+          <tr>
+            <td id="eduSSC">10th</td>
+            <td id="eduSSCPercentage">A grade</td>
+          </tr>
+          <tr>
+            <td id="eduHSC">12th</td>
+            <td id="eduHSCPercentage">A grade</td>
+          </tr>
+          <tr>
+            <td id="eduBCA">Diploma</td>
+            <td id="eduBCAPercentage">Ongoing</td>
+          </tr>
         </table>
-    </section>
-
-    <section id="ordered list numbers">
-        <ol>
-              <ol id="numbers">
-        </ol>
-
-    </section>
-
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Follow me on <a href="https://github.com/mankirat79/Portfolio-Mankirat-" target="_blank">GitHub</a>.</p>
-    </section>
-</main>
-
-<footer>
-    &copy; Mankirat <span id="current-year"></span> | All Rights Reserved
-</footer>
-
+      </section>
+      <section id="contact">
+        <center><h2>Contact Information</h2>
+        <p>Feel free to connect with me on <a href="https://github.com/mankirat79" target="_blank" id="githubLink">GitHub</a></p>
+      </section></center>
+  </main>
+  <ol id="numbers"></ol>
+  <footer id="footer">
+    <p>Mankirat</p>
+  </footer>
+  <ol id="numbers"></ol>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
