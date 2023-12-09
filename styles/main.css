@@ -36,12 +36,10 @@ nav a:hover {
   color: #4285f4; /* Change color on hover */
 }
 
-/* Main content styles */
 main {
   padding: 20px;
 }
 
-/* Section styles */
 section {
   margin-bottom: 40px;
   border-bottom: 1px solid #ddd; /* Add a border between sections for separation */
