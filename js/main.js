@@ -4,12 +4,12 @@ window.onload = function() {
   footerElement.innerHTML = '&copy; ' + currentYear + ' Mankirat. All rights reserved.';
 };
 
-// Alert Button - Display an alert when the button is clicked
+// Alert Button
 document.getElementById('btn-alert').addEventListener('click', function() {
   alert('Hello world!');
 });
 
-// Hover Button - Change button label on hover and revert on mouseleave
+// Hover Button
 var hoverButton = document.getElementById("btn-hover");
 
 hoverButton.addEventListener('mouseover', function() {
@@ -20,7 +20,7 @@ hoverButton.addEventListener('mouseleave', function() {
   hoverButton.innerText = 'Default Button Label';
 });
 
-// Incrementing Button - Increment counter and update text on button click
+// Incrementing Button
 let count = 1;
 
 document.getElementById('btn-counter').onclick = function() {
