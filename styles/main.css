@@ -4,7 +4,6 @@ body, h1, h2, p, ul, figure, table {
   padding: 0;
 }
 
-/* Base styles for the body */
 body {
   font-family: 'Oswald', sans-serif;
   line-height: 1.6;
@@ -12,7 +11,7 @@ body {
   color: #333;
 }
 
-/* Header styles */
+/* Header */
 header {
   background-color: #1a1a1a; /* Dark gray background */
   color: #fff;
@@ -52,12 +51,12 @@ h2 {
   font-family: 'Arial', sans-serif; /* Customized font for h2 elements */
 }
 
-/* Paragraph (p) styles */
+/* Paragraph */
 p {
   font-size: 1.1rem;
 }
 
-/* Image (img, figure, figcaption) styles */
+/* Image styles */
 img {
   max-width: 100%;
   height: auto;
@@ -105,7 +104,7 @@ footer {
   margin-top: 20px; /* Add some margin at the top of the footer */
 }
 
-/* Change text color for even and odd classes */
+/* even and odd colour */
 .even {
   color: blue; /* Change to blue */
 }
