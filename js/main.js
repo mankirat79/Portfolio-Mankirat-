@@ -29,7 +29,7 @@ document.getElementById('btn-counter').onclick = function() {
 
   counterText.innerHTML = `Number: ${count}`;
 
-  // If-else - Change text color based on whether the number is even or odd
+  // If-else
   if (count % 2 === 0) {
     counterText.classList.remove('odd');
     counterText.classList.add('even');
@@ -39,13 +39,12 @@ document.getElementById('btn-counter').onclick = function() {
   }
 };
 
-// for Loops - Populate an ordered list with even and odd list items
+// for Loops
 const numbersList = document.getElementById('numbers');
 
 for (let i = 1; i <= 100; i++) {
   const listItem = document.createElement('li');
 
-  // Use a ternary operator to determine if i is even or odd
   listItem.textContent = i % 2 === 0 ? 'even' : 'odd';
 
   numbersList.appendChild(listItem);
